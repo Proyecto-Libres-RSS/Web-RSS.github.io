@@ -1,0 +1,150 @@
+
+h1{
+    color:#bb223c ;
+    text-align: center;
+}
+h2{
+    color: #6c0bff ;
+    text-align: center;
+    text-align: left;
+}
+pb{
+    background-color: #8357c5;
+    color: #ffffff;
+    text-align: justify-all;
+    font-size: 1.5rem;
+}
+.fondoUltimo{
+    background-color: #f0f0f0
+}
+.letrasCards{
+    color: #666;
+    font-size: 17px;
+    text-align: center;
+}
+.tamañoImagenes3{
+        width: 60%;
+
+}
+.tamañoAtencion{
+    width: 30%;
+
+}
+.soloTituloImagenes{
+    color: #0d703a !important;
+}
+.soloLetrasdeImagenes{
+    margin: 10px 0;
+    color: #666;
+    text-align: center;
+}
+
+div>span{
+    font-size: 24px;
+    color: #545454;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 34px;
+}
+#titulo-tres{
+    color: #f2ff17;
+}
+.clase-verde1{
+    background-color: #0d703a;
+    color:#ffffff !important;
+    text-align: center;
+}
+
+.clase-boton1{
+    background-color: #7ac143 !important;
+}
+.boton2{
+    background-color: #0d5470 !important;
+}
+.botonVerMas{
+    color: #0d703a !important;
+    border: solid 1px #7ac143;
+    background-color: #fff  !important;
+}
+.fondoBoton2{
+    background-color: #3e3e3e!important;
+    border: solid 1px #0d703a;
+
+}
+
+.fondoBoton3{
+   color:  #0d703a !important;
+    background-color: #ffffff!important;
+
+}
+
+
+.cajacard3{
+    background-color: #6e6e6e !important;
+    color: #ffffff;
+    text-align: center;
+    font-size: 11px
+}
+
+.fondoBlanco{
+    background-color: #007bff;
+
+}
+
+
+.tamanio-imagen-50{
+    width: 50%;
+
+}
+.tamanio-icon{
+    width: 20%;
+
+
+}
+.colorArriba{
+    background-color: #4880a4
+}
+.colorNav{
+    background-color:#3e3e3e;
+    line-height: 10px;
+}
+.colorletraNav{
+    color:#ffffff !important;
+}
+.letraspiePagina{
+    color:#ffffff !important;
+    text-align: right;
+}
+
+
+
+/*loader*/
+
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+}
+.lds-circle > div {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    background: #23ff60;
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+    0%, 100% {
+        animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+    }
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(1800deg);
+        animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+    }
+    100% {
+        transform: rotateY(3600deg);
+    }
+}
