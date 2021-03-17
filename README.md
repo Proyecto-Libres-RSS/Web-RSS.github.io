@@ -25,23 +25,6 @@ Para mayor informacion de la licencia ir a [Lincencia](https://opensource.org/li
 
  
  
- Objetivos
- 
-	Licencia
-	Fundadors
-	Etiquetas
-	Descripcion
-	Listas de Correos
-	Roles
-	Gestion
-	Tipo de manera de tomar decisiones (Dictador, Comunidad)
-	Manera en la que se van a obtener recursos
-	Cómo vamos a gastar los recursos
-	Estrategia de Ramas
-	Estretegia de Versionamiento
-	Canales de comunicación
- 
- 
  
 
 
