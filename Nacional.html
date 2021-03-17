@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./archivosCSS/estilo.css">
+    <link rel="stylesheet" href="./archivosCSS/hover-min.css">
+    <link rel="stylesheet" href="./archivosCSS/animate.min.css">
+    <link rel="stylesheet" href="./archivosCSS/bootstrap.min.css">
+
+
+    <title>Nacional</title>
+</head>
+<body>
+<!-- INICIO DE MENU -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light container">
+    <a class="navbar-brand" href="index.html">NOTICIAS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="Nacional.html" id="busqueda">Nacionales <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="Politica.html">Politica <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+
+        </form>
+        <div class=" col-xl-2 col-sm-12 col-md-8 ">
+            <img  class="tamanio-icon" src=".\Imagenes\avatar%20usuario.jpg"  alt="avatar">
+
+        </div>
+
+    </div>
+</nav>
+
+
+<br>
+<br>
+
+<!-- TABLA LECTURA DE RSS -->
+<table class="container table table-striped" id="demo"></table>
+
+<!-- INICIO LECTURA DE RSS -->
+<script>
+    document.getElementById("busqueda").addEventListener("click",archivoXML());
+    function archivoXML() {
+        var xhr=new XMLHttpRequest();
+        xhr.onreadystatechange=function () {
+            if(this.readyState == 4 && this.status == 200){
+                cargarXML(this);
+            }
+
+        };
+        xhr.open("GET","./rss/ecuador.xml",true);
+        xhr.send();
+        function cargarXML(xml){
+            var docXML=xml.responseXML;
+            var tabla ="<tr><th>TITULO</th><th>NOTICIA</th></tr>";
+            var a1=docXML.getElementsByTagName("item");
+            for(var i=0;i<a1.length;i++){
+                tabla +="<tr><td>";
+                tabla +=a1[i].getElementsByTagName("title")[0].textContent;
+                tabla += "</td><td>";
+                tabla +=a1[i].getElementsByTagName("description")[0].textContent;
+                tabla +="</td></tr>";
+            }
+            document.getElementById("demo").innerHTML=tabla;
+
+        };
+
+    }
+</script>
+
+<br>
+<br>
+<!-- BARRA FINAL -->
+
+<div class="row boton2 ">
+    <div class="container">
+        <p class="soloLetrasdeImagenes letraspiePagina"> | Creado por David Moreno y Rodman Iñiguez |</p>
+        <p class="soloLetrasdeImagenes letraspiePagina"> | Materia de Aplicaciones Ambientes Libre |</p>
+        <p class="soloLetrasdeImagenes letraspiePagina"> | Escuela Politecnica Nacional | </p>
+    </div>
+
+    <div class="col-xl-4 col-sm-12 col-md-8 ">
+
+
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>
