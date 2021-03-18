@@ -46,8 +46,10 @@ La comunidad se regirá por medio de los siguientes Roles
 
 Programador:
 Se encargara de realizar la programación acorde a al objetivo de la comunidad
+
 Directores:
 Se encargara de dirigir el correcto desarrollo de la aplicación
+
 Documentación:
 Se encargara de realizar toda la docuentación de cada parte del desarrollo del software.
 
