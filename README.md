@@ -12,7 +12,7 @@
 - Rodman Iñiguez
 - David Moreno
 
-#### Objetivos **
+#### Objetivos 
 Generar noticias en el portal web por medio de archivos
 tipo RSS de varios noticieros y así unirlos en una sola página web creada por nosotros
 
