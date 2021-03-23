@@ -1,11 +1,10 @@
- 
- 
-
+<p style="text-align: center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Escudo_de_la_Escuela_Polit%C3%A9cnica_Nacional.png" height="150px" >
 
 # Escuela Politecnica Nacional
 ### Facultad de Ingenieria en Sistemas
 ### Aplicaciones en ambientes Libres
+</p>
 
 Tabla de Contenidos
 =======================
@@ -67,7 +66,7 @@ Se encargara de dirigir el correcto desarrollo de la aplicación
 Documentación:
 Se encargara de realizar toda la docuentación de cada parte del desarrollo del software.
 
-#### Gestion
+#### Gestión
 
 #### Toma de Desiciones
 Dentro de nuestra comunidad la manera cómo vamos a realizar la toma de decisiones será por medio de la comunidad 
